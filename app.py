@@ -8,7 +8,7 @@ st.title('Weather Report Dashboard')
 st.markdown("The dashboard will visualize the correlation between The Constructed Instrument weather data and Standard Instrument Weather data")
 
 # Sidebar Navigation
-st.sidebar.title('Navigation')
+st.sidebar.write('# Location')
 options = st.sidebar.radio('Select across 10 locations:', 
     ['ALAUSA', 'MAGODO ISHERI', 'MAJIDUN WETLAND', 'OJOKORO IKORODU', 'OLAKETU IKORODU', 'MAYA', 'ISIWU', 'IMOTA IKORODU', 'ODOGIYAN IKORODU', 'IJEDE'])
 
