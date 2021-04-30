@@ -2,13 +2,13 @@ import streamlit as st
 import pandas as pd
 
 def load_data():
-    data=pd.read_excel("magodo.xlsx")
+    data=pd.read_excel("olaketu.xlsx")
     return data
 
 def home():
     data=load_data()
 
-    st.write('## Report for MAGODO ISHERI')
+    st.write('## Report for OLAKETU IKORODU')
     st.table(data)
 
     db_data = data[['SS', 'CS']]

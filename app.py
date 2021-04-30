@@ -1,6 +1,5 @@
 import streamlit as st
-import alausa
-import magodo
+import alausa, magodo, olaketu, giyan, majidun, ijede, ojokoro, maya, isiwu, imota
 
 # st.title("The site is under Upgrade...")
 
@@ -11,25 +10,25 @@ st.markdown("The dashboard will visualize the correlation between The Constructe
 # Sidebar Navigation
 st.sidebar.title('Navigation')
 options = st.sidebar.radio('Select across 10 locations:', 
-    ['ALAUSA', 'MAGODO', 'MAJIDUN', 'OJOKORO IKORODU', 'OLAKETU IKORODU', 'MAYA', 'ISIWU', 'IMOTA IKORODU', 'ODOGIYAN IKORODU', 'IJEDE'])
+    ['ALAUSA', 'MAGODO ISHERI', 'MAJIDUN WETLAND', 'OJOKORO IKORODU', 'OLAKETU IKORODU', 'MAYA', 'ISIWU', 'IMOTA IKORODU', 'ODOGIYAN IKORODU', 'IJEDE'])
 
 if options == 'ALAUSA':
     alausa.home()
-elif options == 'MAGODO':
+elif options == 'MAGODO ISHERI':
     magodo.home()
-elif options == 'MAJIDUN':
-    raw_data.raw_data(las_file, well_data)
+elif options == 'MAJIDUN WETLAND':
+    majidun.home()
 elif options == 'OJOKORO IKORODU':
-    plotting.plot(las_file, well_data)
+    ojokoro.home()
 elif options == 'OLAKETU IKORODU':
-    home.home()
+    olaketu.home()
 elif options == 'MAYA':
-    home.home()
+    maya.home()
 elif options == 'ISIWU':
-    home.home()
+    isiwu.home()
 elif options == 'IMOTA IKORODU':
-    home.home()
+    imota.home()
 elif options == 'ODOGIYAN IKORODU':
-    home.home()
+    giyan.home()
 elif options == 'IJEDE':
-    home.home()
+    ijede.home()
